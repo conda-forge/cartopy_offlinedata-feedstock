@@ -1,5 +1,5 @@
 {% set name = "cartopy_offlinedata" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/willirath/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f3c101a0e764d6bc2951fec364e3dc3e0fe662e8d9a9b6b3ccae59578683c9ef
+  sha256: 3457fcee979a0ad584f4106dffac4d947c0419804bc03282e2edd777cee3f0c5
 
 build:
   noarch: python
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Override cartopy.config to use offline data stored in the conda env.'
+  summary: Override cartopy.config to use offline data stored in the conda env.
   doc_url: https://github.com/willirath/cartopy_offlinedata
   dev_url: https://github.com/willirath/cartopy_offlinedata
 
