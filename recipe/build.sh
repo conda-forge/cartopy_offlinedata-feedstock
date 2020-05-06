@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-$PYTHON -m pip install . -vv
+set -e
 
-download_cartopy_data.sh ${PREFIX}/share/cartopy/
+$PYTHON -m pip install . --no-deps -vv
+
+$PYTHON bin/download_cartopy_data.py -o ${PREFIX}/share/cartopy/
 
 cp -r ${RECIPE_DIR}/licenses ${PREFIX}/share/cartopy/
 
