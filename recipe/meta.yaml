@@ -1,5 +1,5 @@
 {% set name = "cartopy_offlinedata" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/willirath/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 80f64f8acc77b207435ee4030070e72751ed0de74873ee38e762d71ac783f249
+  sha256: 533ad3194ad2fcb55ec961a5ead954d04de0ce13d82381437ad3951c19760383
 
 build:
   noarch: python
@@ -15,12 +15,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.0.0
     - pip
     - setuptools
     - cartopy >=0.18.0
   run:
-    - python
+    - python >=3.0.0
     - cartopy >=0.18.0
 
 test:
