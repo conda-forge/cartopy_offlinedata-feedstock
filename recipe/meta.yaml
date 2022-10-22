@@ -1,13 +1,14 @@
 {% set name = "cartopy_offlinedata" %}
-{% set version = "0.2.4" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/willirath/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 533ad3194ad2fcb55ec961a5ead954d04de0ce13d82381437ad3951c19760383
+  # not used directly, just to have the bot keep us in sync with cartopy releases
+  url: https://pypi.io/packages/source/c/cartopy/Cartopy-{{ version }}.tar.gz
+  sha256: eae58aff26806e63cf115b2bce9477cedc4aa9f578c5e477b2c25cfa404f2b7a
 
 build:
   noarch: python
@@ -16,27 +17,27 @@ build:
 requirements:
   host:
     - python >=3.0.0
-    - pip
-    - setuptools
-    - cartopy >=0.18.0
+    - cartopy {{ version }}
   run:
     - python >=3.0.0
-    - cartopy >=0.18.0
+    - cartopy >={{ version }}
 
 test:
-  imports:
-    - cartopy_userconfig
   commands:
-    - download_cartopy_data.py --help
+    # pick a few random things to check for
+    - test -f $PREFIX/share/cartopy/shapefiles/natural_earth/physical/ne_10m_antarctic_ice_shelves_polys.shp
+    - test -f $PREFIX/share/cartopy/shapefiles/natural_earth/physical/ne_10m_coastline.shp
+    - test -f $PREFIX/share/cartopy/shapefiles/natural_earth/cultural/ne_50m_urban_areas.shp
 
 about:
-  home: https://github.com/willirath/cartopy_offlinedata
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE
-  summary: Override cartopy.config to use offline data stored in the conda env.
-  doc_url: https://github.com/willirath/cartopy_offlinedata
-  dev_url: https://github.com/willirath/cartopy_offlinedata
+  home: https://scitools.org.uk/cartopy/docs/latest/
+  summary: Offline data for using cartopy without an internet connection
+  license: GPL-3.0-only
+  license_file:
+    - licenses/LICENSE_NACISCDN_NaturalEarth
+    - licenses/LICENSE_NOAA_NGDC_GSHHS
+  dev_url: https://github.com/SciTools/cartopy
+  doc_url: https://scitools.org.uk/cartopy/docs/latest/
 
 extra:
   recipe-maintainers:
