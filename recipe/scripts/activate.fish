@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
-if set -q CARTOPY_OFFLINE_SHARED
-  set -gx _CONDA_SET_CARTOPY_OFFLINE_SHARED "$CARTOPY_OFFLINE_SHARED"
+if set -q CARTOPY_DATA_DIR
+  set -gx _CONDA_SET_CARTOPY_DATA_DIR "$CARTOPY_DATA_DIR"
 end
 
-set -gx CARTOPY_OFFLINE_SHARED "$CONDA_PREFIX/share/cartopy"
+set -gx CARTOPY_DATA_DIR "$CONDA_PREFIX/share/cartopy"
