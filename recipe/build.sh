@@ -2,8 +2,6 @@
 
 set -e
 
-${RECIPE_DIR}/download_antarctic.py -o ${PREFIX}/share/cartopy/
-
 cartopy_feature_download.py --output ${PREFIX}/share/cartopy/ gshhs physical cultural cultural-extra
 
 cp -r ${RECIPE_DIR}/licenses ${PREFIX}/share/cartopy/
