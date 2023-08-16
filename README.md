@@ -1,11 +1,11 @@
-About cartopy_offlinedata
-=========================
+About cartopy_offlinedata-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cartopy_offlinedata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://scitools.org.uk/cartopy/docs/latest/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cartopy_offlinedata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Offline data for using cartopy without an internet connection
 
