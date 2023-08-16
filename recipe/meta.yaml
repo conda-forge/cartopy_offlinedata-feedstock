@@ -1,5 +1,5 @@
 {% set name = "cartopy_offlinedata" %}
-{% set version = "0.21.1" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # not used directly, just to have the bot keep us in sync with cartopy releases
   url: https://pypi.io/packages/source/c/cartopy/Cartopy-{{ version }}.tar.gz
-  sha256: 89d5649712c8582231c6e11825a04c85f6f0cee94dbb89e4db23eabca1cc250a
+  sha256: b300f90120931d43f11ef87c064ea1dacec1b59a4940aa76ebf82cf09548bb49
 
 build:
   noarch: python
