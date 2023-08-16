@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  # not used directly, just to have the bot keep us in sync with cartopy releases
+  # used for the download tool
   url: https://pypi.io/packages/source/c/cartopy/Cartopy-{{ version }}.tar.gz
   sha256: b300f90120931d43f11ef87c064ea1dacec1b59a4940aa76ebf82cf09548bb49
 

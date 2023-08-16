@@ -2,7 +2,7 @@
 
 set -e
 
-cartopy_feature_download.py --output ${PREFIX}/share/cartopy/ gshhs physical cultural cultural-extra
+${PYTHON} tools/cartopy_feature_download.py --output ${PREFIX}/share/cartopy/ gshhs physical cultural cultural-extra
 
 cp -r ${RECIPE_DIR}/licenses ${PREFIX}/share/cartopy/
 
