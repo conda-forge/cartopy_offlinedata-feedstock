@@ -1,5 +1,5 @@
 {% set name = "cartopy_offlinedata" %}
-{% set version = "0.22.0" %}
+{% set version = "0.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # used for the download tool
   url: https://pypi.io/packages/source/c/cartopy/Cartopy-{{ version }}.tar.gz
-  sha256: b300f90120931d43f11ef87c064ea1dacec1b59a4940aa76ebf82cf09548bb49
+  sha256: 231f37b35701f2ba31d94959cca75e6da04c2eea3a7f14ce1c75ee3b0eae7676
 
 build:
   noarch: python
