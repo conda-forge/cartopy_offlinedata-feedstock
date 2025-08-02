@@ -31,7 +31,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cartopy_offlinedata-green.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cartopy__offlinedata-green.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cartopy_offlinedata.svg)](https://anaconda.org/conda-forge/cartopy_offlinedata) |
 
 Installing cartopy_offlinedata
 ==============================
