@@ -3,7 +3,7 @@ About cartopy_offlinedata-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cartopy_offlinedata-feedstock/blob/main/LICENSE.txt)
 
-Home: https://scitools.org.uk/cartopy/docs/latest/
+Home: https://scitools.org.uk/cartopy
 
 Package license: GPL-3.0-only
 
@@ -192,6 +192,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ocefpaf](https://github.com/ocefpaf/)
 * [@willirath](https://github.com/willirath/)
 * [@xylar](https://github.com/xylar/)
 
